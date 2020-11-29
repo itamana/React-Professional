@@ -20,6 +20,7 @@ export const Img = styled.img`
 `
 
 export const Button = styled.button`
+	background-color: white;
 	display: flex;
 	align-items: center;
 	padding-top: 8px;
