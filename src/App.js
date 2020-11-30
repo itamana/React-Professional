@@ -2,7 +2,7 @@ import React from 'react';
 import {Category} from "./components/category";
 import {ListOfCategories} from "./components/listOfCategories";
 import {GlobalStyle} from "./styles/GlobalStyles";
-import {ListOfPhotoCards} from "./components/ListOfPhotoCards";
+import {ListOfPhotoCards} from "./container/ListOfPhotoCards";
 import {Logo} from "./components/Logo";
 
 export const App = () => (
@@ -10,6 +10,6 @@ export const App = () => (
 		<GlobalStyle />
 		<Logo/>
 		<ListOfCategories/>
-		<ListOfPhotoCards />
+		<ListOfPhotoCards/>
 	</div>
 );
