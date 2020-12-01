@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve --history-api-fallback",
-    "lint": "standard --fix"
+    "lint": "standard --fix",
+    "serve:dev": "npx webpack --mode 'development' && npx serve dist -s"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,9 @@
     "react-dom": "^17.0.1",
     "webpack": "^5.8.0",
     "webpack-cli": "^4.2.0",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-pwa-manifest": "^4.3.0",
+    "workbox-webpack-plugin": "^6.0.0"
   },
   "standard": {
     "ignore": [
@@ -47,6 +50,7 @@
     "graphql": "^15.4.0",
     "intersection-observer": "^0.11.0",
     "react-apollo": "^3.1.5",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.1.0",
     "standard": "^16.0.3",
     "styled-components": "^5.2.1"

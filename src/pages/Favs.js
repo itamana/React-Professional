@@ -1,9 +1,10 @@
 import React, {Fragment} from "react";
 import {FavsWithQuery} from "../container/GetFavs";
+import { Helmet } from "react-helmet";
+import { Layout } from "../components/Layout";
 
-export const Favs = () => (
-	<Fragment>
-		<h1>Favorites</h1>
+export default () => (
+	<Layout title="Your favorites" subtitle="Here you can find your favorites pets">
 		<FavsWithQuery/>
-	</Fragment>
+	</Layout>
 )

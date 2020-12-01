@@ -1,12 +1,17 @@
 import React, {Fragment} from "react";
 import {ListOfCategories} from "../components/listOfCategories";
 import {ListOfPhotoCards} from "../container/ListOfPhotoCards";
+import { Layout } from "../components/Layout";
 
-export const Home = ({ id }) => {
+const HomePage = ({ id }) => {
 	return (
-		<Fragment>
+		<Layout title="PetGram - Your pets photos app" description="With PetGram you can find pretty pets photos">
 			<ListOfCategories/>
 			<ListOfPhotoCards categoryId={ id }/>
-		</Fragment>
+		</Layout>
 	)
 }
+
+export const Home = React.memo(HomePage, (prevProps, props) => {
+	return prevProps.id === props.id
+});
