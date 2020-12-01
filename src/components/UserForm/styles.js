@@ -34,9 +34,6 @@ export const Button = styled.button`
 export const Error = styled.span`
 	font-size: 14px;
 	color: red;
-	$[disabled] {
-		opacity: .3;
-	}
 `
 
 export const Title = styled.h2`
